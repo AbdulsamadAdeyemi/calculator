@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+.login_container {
+    width: 90%;
+    max-width: 400px;
+    margin: 90px auto;
+    border: 0px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.login {
+    text-align: center;
+    padding-top: 5px;
+    color: red;
+    font-size: 40px;
+}
+
+form {
+    display: block;
+}
+
+input {
+    width: 100%;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    outline: 0;
+    height: 40px;
+    border-bottom: 2px solid red;
+    margin-bottom: 15px;
+}
+
+.link {
+    padding-left: 300px;
+}
+
+.submit {
+    width: 100%;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: larger;
+    border: 2px solid white;
+    margin-top: 10px;
+}
+
+::placeholder {
+    font-size: 15px;
+    color: gray;
+    padding-left: 10px;
+}
+
+.forPassword {
+    text-align: center;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.text_or {
+    text-align: center;
+    border-top: 2px solid white;
+    padding: 10px 0;
+}
+
+.Create {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    margin-bottom: 30px;
+    border: 2px solid red;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .login_container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .login {
+        font-size: 30px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    .submit, .Create {
+        font-size: 16px;
+    }
+}

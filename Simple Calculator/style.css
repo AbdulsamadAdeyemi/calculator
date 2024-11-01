@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #2C3E50;
+}
+
+.huge_container {
+    width: 30%;
+    margin: auto;
+    background-color: #34495E;
+    border-radius: 10%;
+}
+
+main {
+    width: 100%;
+    margin: 50px auto;
+    border-radius: 50px;
+}
+
+.calculator_screen {
+    background-color: #1ABC9C;
+    border-radius: 10px;
+    color: white;
+    padding-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    word-wrap: break-word;
+    width: 100%;
+    height: 25vh;
+    padding: 0;
+    overflow-y: auto;
+}
+
+.operations {
+    margin-top: 20px;
+    margin: 10px auto;
+    gap: 10px;
+    width: 100%;
+    display: grid;
+    padding: 10px;
+    border-radius: 50px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.operations > div {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 30px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.multiply, .divide, .subtract, .add {
+    background-color: #F39C12;
+}
+
+.nine, .eight, .seven, .six, .five,
+.four, .three, .two, .one, .zero, .dot {
+    background-color: #E67E22;
+    transition: all 0.3s;
+}
+
+.equal_to {
+    background-color: #2ECC71;
+}
+
+.cee {
+    background-color: #E74C3C;
+}
+
+.history {
+    background-color: blue;
+    cursor: pointer;
+}
+
+.operations > div:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width: 750px) {
+    .huge_container {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .huge_container {
+        width: 90%;
+    }
+
+    .calculator_screen {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .huge_container {
+        width: 65%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .huge_container {
+        width: 70%;
+        margin: auto;
+    }
+}

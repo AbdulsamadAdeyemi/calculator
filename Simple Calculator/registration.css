@@ -1,0 +1,107 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   color: black;
+   font-family: 'Times New Roman', Times, serif;
+   font-optical-sizing: auto;
+   font-style: normal;
+}
+
+body {
+   background-color: black;
+}
+
+.registration_Block {
+   width: 90%;
+   max-width: 600px; 
+   margin: 120px auto;
+   background-color: whitesmoke;
+   color: black; 
+   padding: 20px; 
+   border-radius: 10px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.regtext {
+   text-align: center;
+   margin-bottom: 20px; 
+}
+
+h4 {
+   font-size: 30px; 
+   font-weight: 100; 
+   color: black;
+}
+
+h5 {
+   color: gray;
+   font-size: 14px;
+}
+
+form {
+   display: flex;
+   flex-direction: column; 
+   gap: 15px; 
+}
+
+.names {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); 
+   gap: 10px; 
+}
+
+.names input {
+   height: 30px;
+}
+
+.emailpass {
+   display: flex; 
+   flex-direction: column;
+}
+
+.gendertext {
+   text-align: left; 
+}
+
+.genderphone {
+   display: flex; 
+   justify-content: space-between;
+}
+
+input {
+   outline: 0;
+   border: 1px solid #ccc; 
+   border-radius: 5px;
+   padding: 5px;
+}
+
+button {
+   padding: 10px;
+   color: white;
+   background-color: red;
+   border-radius: 5px;
+   border: 0;
+   font-size: 16px;
+}
+
+.errormessage {
+   color: red;
+   font-size: 12px;
+   margin-top: -5px; 
+}
+
+
+@media (max-width: 768px) {
+   h4 {
+       font-size: 24px; /
+   }
+
+   h5 {
+       font-size: 12px; 
+   }
+
+   button {
+       padding: 12px;
+   }
+}
